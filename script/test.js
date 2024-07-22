@@ -3,6 +3,7 @@ let nb1 = prompt("Entrez le nombre 1 :");
 let nb2 = prompt("Entrez le nombre 2 :");
 
 /******************************** 
+ * plouf
 if (nb1 >= 0) {
     if (nb2 >= 0) 
     {
