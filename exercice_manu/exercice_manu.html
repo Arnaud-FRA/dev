@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les couleurs</title>
+    <style>
+        body {
+            display: flex;
+            align-items:flex-start;
+            justify-content:center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #454540;
+        }
+        .main-container {
+            display: flex;
+            align-items:center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 240px;
+            margin-right: 20px;
+        }
+        .small-box {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .large-box {
+            width: 200px;
+            height: 200px;
+            background-color: #223129;
+        }
+        .slider-container {
+            display: flex;
+            flex-direction:column;
+            align-items: flex-start;
+            gap: 25px;
+        }
+        .slider {
+            width: 300px;
+            margin-bottom: 15px;
+        }
+        .slider-label {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="main-container">
+    <div class="container" id="small-boxes">
+    </div>
+    <div class="large-box" id="large-box"></div>
+    <div class="slider-container">
+        <label class="slider-label">rouge:</label>
+        <input type="range" id="red-slider" class="slider" min="0" max="255" value="46" oninput="updateColor()">
+        <label class="slider-label">vert:</label>
+        <input type="range" id="green-slider" class="slider" min="0" max="255" value="204" oninput="updateColor()">
+        <label class="slider-label">blue:</label>
+        <input type="range" id="blue-slider" class="slider" min="0" max="255" value="113" oninput="updateColor()">
+    </div>
+</div>
+
+
+<script src="exercice_manu.js">
+    
+</script>
+
+
+</body>
+</html>
