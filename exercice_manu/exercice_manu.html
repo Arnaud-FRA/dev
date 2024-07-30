@@ -6,16 +6,17 @@
     <title>les couleurs</title>
     <style>
         body {
+            margin-top: 20px;
             display: flex;
             align-items:flex-start;
             justify-content:center;
             min-height: 100vh;
-            margin: 0;
             background-color: #454540;
         }
         .main-container {
             display: flex;
             align-items:center;
+            flex-direction: column;
         }
         .container {
             display: flex;
@@ -35,6 +36,7 @@
             background-color: #223129;
         }
         .slider-container {
+            margin-top: 100px;
             display: flex;
             flex-direction:column;
             align-items: flex-start;
@@ -57,11 +59,11 @@
     </div>
     <div class="large-box" id="large-box"></div>
     <div class="slider-container">
-        <label class="slider-label">rouge:</label>
+        <label class="slider-label"><u>rouge:</u></label>
         <input type="range" id="red-slider" class="slider" min="0" max="255" value="46" oninput="updateColor()">
-        <label class="slider-label">vert:</label>
+        <label class="slider-label"><u>vert:</u></label>
         <input type="range" id="green-slider" class="slider" min="0" max="255" value="204" oninput="updateColor()">
-        <label class="slider-label">blue:</label>
+        <label class="slider-label"><u>bleu:</u></label>
         <input type="range" id="blue-slider" class="slider" min="0" max="255" value="113" oninput="updateColor()">
     </div>
 </div>
