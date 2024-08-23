@@ -1,6 +1,11 @@
-var myTableau = ["pomme", "poire", "banane", "fraise", "abricot"];
+let montableau =[];
 
-for (var i = 0; i < myTableau.length; i++) 
-{
-   alert("Fruit : "+myTableau[i]);
-}
+
+let saisie;
+
+do{
+
+saisie=prompt("Entrez la taille du tableau");
+montableau.push(saisie);
+}while (saisie != "")
+console.log(montableau);
